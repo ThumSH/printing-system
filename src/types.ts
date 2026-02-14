@@ -9,6 +9,17 @@ export interface Order {
   deliveryDate: string;
   psd: string;
 }
+export interface DevelopmentItem {
+  id: number;
+  customer: string;
+  style: string;
+  factory: string;
+  orderDate: string;
+  color: string;
+  requestDate: string;
+  image: string | null; // URL for the uploaded image
+  status: 'Pending' | 'Approved' | 'Rejected';
+}
 
 export interface LoadingPlanItem {
   id: number;
